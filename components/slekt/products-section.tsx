@@ -74,7 +74,7 @@ export function ProductsSection() {
   const { ref, isInView } = useInView()
 
   return (
-    <section className="bg-lapis-deep py-[72px] px-5 md:py-28 md:px-[60px] relative overflow-hidden" id="products">
+    <section className="bg-lapis-deep py-[72px] px-5 md:py-32 md:px-[60px] relative overflow-hidden" id="products">
       <svg
         className="absolute inset-0 pointer-events-none opacity-25"
         viewBox="0 0 1000 700"
@@ -85,52 +85,52 @@ export function ProductsSection() {
       </svg>
 
       <div className="relative z-[1]">
-        <div className="font-mono text-[10px] tracking-[0.18em] uppercase text-teal mb-2.5 flex items-center gap-2.5">
+        <div className="font-mono text-[10px] tracking-[0.18em] uppercase text-teal mb-3 flex items-center gap-2.5">
           <span className="block w-[18px] h-px bg-teal" />
           Three products
         </div>
-        <h2 className="font-serif text-[clamp(36px,4.2vw,58px)] font-medium tracking-[0.01em] leading-[1.1] mb-[18px] text-white">
+        <h2 className="font-serif text-[clamp(36px,4.2vw,58px)] font-medium tracking-[0.01em] leading-[1.1] mb-5 text-white">
           One platform.
           <br />
           <em className="italic text-teal font-normal">Three ways to win.</em>
         </h2>
-        <p className="text-base font-light text-white/35 max-w-[520px] leading-[1.85] mb-[60px]">
+        <p className="text-[15px] font-light text-white/[0.55] max-w-[520px] leading-[1.85] mb-[64px]">
           Earn on idle cash. Bank globally. Manage everything with AI — at a fraction of the current
           cost.
         </p>
 
         <div
           ref={ref}
-          className={`grid grid-cols-1 md:grid-cols-3 gap-px bg-white/5 mt-[60px] transition-all duration-[650ms] ease-out ${
+          className={`grid grid-cols-1 md:grid-cols-3 gap-px bg-white/5 mt-[64px] transition-all duration-[650ms] ease-out ${
             isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           }`}
         >
           {products.map((product, i) => (
             <div
               key={product.name}
-              className="bg-lapis-deep p-9 md:px-9 md:py-11 border border-white/[0.06] relative overflow-hidden group hover:bg-lapis/55 hover:border-white/[0.12] transition-all duration-[250ms]"
+              className="bg-lapis-deep px-10 py-12 border border-white/[0.06] relative overflow-hidden group hover:bg-lapis/55 hover:border-white/[0.12] transition-all duration-[250ms]"
               style={{ transitionDelay: `${i * 75}ms` }}
             >
               <div
-                className={`absolute top-0 left-0 right-0 h-0.5 ${product.accentColor} opacity-0 group-hover:opacity-100 transition-opacity duration-[250ms]`}
+                className={`absolute top-0 left-0 right-0 h-0.5 ${product.accentColor} opacity-40 group-hover:opacity-100 transition-opacity duration-[250ms]`}
               />
               <div
-                className={`w-10 h-10 rounded-[9px] flex items-center justify-center mb-[22px] ${product.iconBg}`}
+                className={`w-10 h-10 rounded-[9px] flex items-center justify-center mb-6 ${product.iconBg}`}
               >
                 {product.icon}
               </div>
-              <div className={`font-serif text-[44px] font-semibold leading-none mb-[5px] ${product.yieldColor}`}>
+              <div className={`font-serif text-[48px] font-semibold leading-none mb-[6px] ${product.yieldColor}`}>
                 {product.yield}
               </div>
-              <div className="font-serif text-[21px] font-medium text-white mb-3">{product.name}</div>
-              <p className="text-[13px] font-light text-white/40 leading-[1.75] mb-5">
+              <div className="font-serif text-[22px] font-medium text-white mb-3.5">{product.name}</div>
+              <p className="text-[13px] font-light text-white/[0.62] leading-[1.8] mb-6">
                 {product.desc}
               </p>
               <div className="flex flex-wrap gap-[5px]">
                 {product.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="text-[10px] bg-white/[0.06] rounded px-2 py-[3px] text-white/[0.38] font-mono"
+                    className="text-[10px] bg-white/[0.09] rounded px-2 py-[3px] text-white/[0.55] font-mono"
                   >
                     {tag}
                   </span>
