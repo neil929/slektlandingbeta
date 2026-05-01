@@ -4,7 +4,7 @@ import { useInView } from "@/hooks/use-in-view"
 
 const securityItems = [
   {
-    title: "FIN-FSA Regulated",
+    title: "MiFID II Compliant",
     desc: "Investment Services and Payments Institution licences in progress. MiFID II compliant across the EU.",
     icon: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -84,8 +84,8 @@ export function SecuritySection() {
         Bank-grade <em className="italic text-lapis-mid font-normal">segregation.</em>
       </h2>
       <p className="text-base font-light text-cream-700 max-w-[520px] leading-[1.85] mb-[60px]">
-        Slekt is obtaining an Investment Services Licence and Payments Institution Licence with
-        FIN-FSA. Built on solid ground from day one.
+        Slekt is obtaining an Investment Services Licence and Payments Institution Licence.
+        Built on solid ground from day one.
       </p>
 
       <div

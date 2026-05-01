@@ -21,7 +21,7 @@ export function Footer() {
       <div className="text-[11px] text-white/20 font-mono tracking-[0.05em] leading-[1.9] text-left md:text-right">
         © 2026 Slekt Capital Oy · Helsinki, Finland
         <br />
-        FIN-FSA licence application in progress · MiFID II · Client funds segregated
+        MiFID II · Client funds segregated
         <br />
         All investments carry risk. Past performance does not guarantee future returns.
       </div>

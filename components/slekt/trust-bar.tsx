@@ -14,7 +14,7 @@ export function TrustBar() {
       </div>
       <div className="font-mono text-[10px] tracking-[0.1em] uppercase text-white/50 flex items-center gap-2">
         <span className="w-[5px] h-[5px] rounded-full bg-teal shrink-0" />
-        MiFID II · FIN-FSA regulated
+        MiFID II Compliant
       </div>
     </div>
   )
