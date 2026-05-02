@@ -1,6 +1,5 @@
 import { Navigation } from "@/components/slekt/navigation"
 import { HeroSection } from "@/components/slekt/hero-section"
-import { LayersSection } from "@/components/slekt/layers-section"
 import { ProblemSection } from "@/components/slekt/problem-section"
 import { TrustBar } from "@/components/slekt/trust-bar"
 import { ProductsSection } from "@/components/slekt/products-section"
@@ -18,10 +17,8 @@ export default function Home() {
   return (
     <main>
       <Navigation />
-      {/* Section 1 */}
+      {/* Section 1 - Hero with Layers */}
       <HeroSection />
-      {/* Section 2 - Horizontal strip */}
-      <LayersSection />
       {/* Section 3 */}
       <ProblemSection />
       {/* Nordic Trust Band */}
