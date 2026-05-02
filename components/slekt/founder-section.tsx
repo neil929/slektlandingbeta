@@ -1,28 +1,26 @@
 export function FounderSection() {
   return (
-    <section className="section section-alt" id="founder">
+    <section className="section section-navy" id="founder">
       <div className="container">
-        <p className="section-label">{"Founder's note"}</p>
+        <div className="section-label">Section 09 — Founder&apos;s Note</div>
         <div className="founder-card">
           <div className="founder-left">
             <div className="founder-photo-wrap">
-              <div style={{ width: '100%', height: '100%', background: 'linear-gradient(135deg,#1A4FA0,#0D2B5E)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'Georgia, serif', fontSize: '36px', color: '#F0C040' }}>
-                N
-              </div>
+              <img src="/neil-ambikar.jpg" alt="Neil Ambikar" className="founder-photo" />
             </div>
-            <div className="founder-name">Neil Ambikar</div>
-            <p className="founder-role">Founder · Slekt Capital</p>
-            <div className="founder-creds">
-              <div className="founder-cred">Previously Narvi Payments</div>
-              <div className="founder-cred">10 years in fintech</div>
-              <div className="founder-cred">Helsinki, Finland</div>
+            <div className="founder-identity">
+              <div className="founder-name">Neil Ambikar</div>
+              <div className="founder-role">Founder, Slekt Capital</div>
+              <div className="founder-creds">
+                <div className="founder-cred">Previously Founder, Narvi Payments</div>
+                <div className="founder-cred">10+ years building regulated fintech</div>
+                <div className="founder-cred">Neobanks, payment orchestration, crypto/fiat</div>
+              </div>
             </div>
           </div>
           <div className="founder-right">
             <blockquote className="founder-quote">
-              We have been building financial startups for 10 years. AI-first development is the
-              greatest opportunity we have seen to truly revolutionise banking — and allow every
-              business to have its own <em>personalised bank.</em>
+              &ldquo;We have been building multiple financial startups over the last 10 years. We solved a lot of challenges for our users from launching Neobanks for businesses, payment orchestration platforms, combining crypto with fiat. We were always held back due to regulation and the slow pace of developing technology in the payments space. <em>AI-first platform development is the greatest opportunity we have seen in our careers.</em>&rdquo;
             </blockquote>
           </div>
         </div>
