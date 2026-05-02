@@ -50,30 +50,30 @@ export function GenerationsSection() {
     switch (variant) {
       case "v1":
         return {
-          bg: "bg-white border-cream-200",
-          badge: "bg-cream-200 text-cream-700",
-          era: "text-lapis",
-          sub: "text-cream-500",
-          feat: "text-cream-700",
-          dot: "bg-cream-300",
+          bg: "bg-white border-mist/30",
+          badge: "bg-mist/30 text-navy",
+          era: "text-navy",
+          sub: "text-mist",
+          feat: "text-mist",
+          dot: "bg-mist/60",
         }
       case "v2":
         return {
-          bg: "bg-lapis-100 border-lapis-100",
-          badge: "bg-lapis-mid text-white",
-          era: "text-lapis",
-          sub: "text-cream-500",
-          feat: "text-cream-700",
-          dot: "bg-lapis-mid",
+          bg: "bg-frost border-royal/20",
+          badge: "bg-royal text-white",
+          era: "text-navy",
+          sub: "text-mist",
+          feat: "text-mist",
+          dot: "bg-royal",
         }
       case "v3":
         return {
-          bg: "bg-lapis border-lapis",
-          badge: "bg-teal text-lapis-deep",
+          bg: "bg-navy border-navy",
+          badge: "bg-gold text-midnight",
           era: "text-white",
-          sub: "text-white/35",
-          feat: "text-white/55",
-          dot: "bg-teal",
+          sub: "text-mist/50",
+          feat: "text-mist/70",
+          dot: "bg-gold",
         }
       default:
         return {
@@ -88,17 +88,17 @@ export function GenerationsSection() {
   }
 
   return (
-    <section className="bg-cream-100 py-[72px] px-5 md:py-28 md:px-[60px]" id="banking30">
-      <div className="font-mono text-[10px] tracking-[0.18em] uppercase text-teal-dim mb-2.5 flex items-center gap-2.5">
-        <span className="block w-[18px] h-px bg-teal" />
+    <section className="bg-frost py-[72px] px-5 md:py-28 md:px-[60px]" id="banking30">
+      <div className="font-mono text-[10px] tracking-[0.18em] uppercase text-royal mb-2.5 flex items-center gap-2.5">
+        <span className="block w-[18px] h-px bg-royal" />
         Why now
       </div>
-      <h2 className="font-serif text-[clamp(36px,4.2vw,58px)] font-medium tracking-[0.01em] leading-[1.1] mb-[18px] text-lapis">
+      <h2 className="font-serif text-[clamp(36px,4.2vw,58px)] font-medium tracking-[0.01em] leading-[1.1] mb-[18px] text-navy">
         Three generations of
         <br />
-        <em className="italic text-lapis-mid font-normal">banking technology</em>
+        <em className="italic text-royal font-normal">banking technology</em>
       </h2>
-      <p className="text-base font-light text-cream-700 max-w-[520px] leading-[1.85] mb-[60px]">
+      <p className="text-base font-light text-mist max-w-[520px] leading-[1.85] mb-[60px]">
         Legacy and first-gen fintech systems cannot be retrofitted into AI-native architecture. The
         codebase is incompatible. Slekt must be built new — and that is exactly what we are doing.
       </p>
@@ -118,7 +118,7 @@ export function GenerationsSection() {
               style={{ transitionDelay: `${i * 75}ms` }}
             >
               <span
-                className={`font-mono text-[9px] tracking-[0.15em] uppercase rounded-[20px] px-[11px] py-[3px] inline-block mb-[18px] ${styles.badge}`}
+                className={`font-mono text-[9px] tracking-[0.15em] uppercase rounded-[20px] px-[11px] py-[3px] inline-block mb-[18px] font-medium ${styles.badge}`}
               >
                 {gen.badge}
               </span>
@@ -136,7 +136,7 @@ export function GenerationsSection() {
                 </div>
               ))}
               {gen.note && (
-                <div className="text-[11px] text-white/[0.22] mt-[18px] pt-3.5 border-t border-white/[0.08] italic leading-[1.65]">
+                <div className="text-[11px] text-mist/40 mt-[18px] pt-3.5 border-t border-mist/15 italic leading-[1.65]">
                   {gen.note}
                 </div>
               )}

@@ -46,7 +46,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#1D3461',
+  themeColor: '#0B1B38',
 }
 
 export default function RootLayout({
@@ -55,8 +55,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${jakarta.variable} ${dmMono.variable}`}>
-      <body className="font-sans antialiased bg-cream">
+    <html lang="en" className={`${cormorant.variable} ${jakarta.variable} ${dmMono.variable} bg-midnight`}>
+      <body className="font-sans antialiased bg-midnight text-white">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
