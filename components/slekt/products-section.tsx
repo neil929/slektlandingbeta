@@ -1,143 +1,46 @@
-"use client"
-
-import { useInView } from "@/hooks/use-in-view"
-
-const products = [
-  {
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-        <path
-          d="M3 10c0-3.5 3-7 7-7s7 3 7 7"
-          stroke="#00D4A8"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-        />
-        <path
-          d="M1 10c0-5 4-9 9-9s9 4.5 9 9"
-          stroke="#00D4A8"
-          strokeWidth="1"
-          strokeLinecap="round"
-          opacity=".45"
-        />
-        <circle cx="10" cy="15" r="3" fill="#00D4A8" />
-        <circle cx="10" cy="15" r="1.5" fill="#0B1A2E" />
-      </svg>
-    ),
-    iconBg: "bg-teal/10",
-    yield: "2–8%",
-    yieldColor: "text-teal",
-    name: "Slekt Earn",
-    desc: "Earn a real return on your business cash. Choose your risk. Your money works from day one.",
-    tags: ["EU Gov. Bonds", "US Treasuries", "Corporate Bonds", "Emerging Markets"],
-    accentColor: "bg-teal",
-  },
-  {
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-        <rect x="2" y="6" width="16" height="10" rx="2.5" stroke="#C9A84C" strokeWidth="1.5" />
-        <path d="M6 6V5C6 3.9 6.9 3 8 3H12C13.1 3 14 3.9 14 5V6" stroke="#C9A84C" strokeWidth="1.5" />
-        <circle cx="10" cy="11" r="1.8" fill="#C9A84C" />
-      </svg>
-    ),
-    iconBg: "bg-gold/10",
-    yield: "80%",
-    yieldColor: "text-gold",
-    name: "Slekt Pay",
-    desc: "Named IBAN, multi-currency account, credit card, and global payments — 80% cheaper than your bank.",
-    tags: ["Named IBAN", "Multi-currency", "Global Payments", "Credit Card"],
-    accentColor: "bg-gold",
-  },
-  {
-    icon: (
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-        <path
-          d="M4 16L7.5 12L10 15L15 9L19 13"
-          stroke="#4D8FD4"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <circle cx="10" cy="4.5" r="2.5" stroke="#4D8FD4" strokeWidth="1.5" />
-      </svg>
-    ),
-    iconBg: "bg-lapis-light/[0.12]",
-    yield: "AI OS",
-    yieldColor: "text-lapis-light",
-    name: "Slekt Banking OS",
-    desc: "Your AI co-founder. Integrate everything, connect to Claude and ChatGPT, build custom tools. No dev team needed.",
-    tags: ["AI Advisors", "Custom Apps", "Claude · ChatGPT", "Auto Reports"],
-    accentColor: "bg-lapis-light",
-  },
-]
-
 export function ProductsSection() {
-  const { ref, isInView } = useInView()
-
   return (
-    <section className="bg-lapis-deep py-[72px] px-5 md:py-32 md:px-[60px] relative overflow-hidden" id="products">
-      <svg
-        className="absolute inset-0 pointer-events-none opacity-25"
-        viewBox="0 0 1000 700"
-        fill="none"
-      >
-        <circle cx="120" cy="600" r="280" stroke="rgba(0,212,168,0.12)" strokeWidth="1" />
-        <circle cx="120" cy="600" r="180" stroke="rgba(201,168,76,0.1)" strokeWidth="1" />
-      </svg>
-
-      <div className="relative z-[1]">
-        <div className="font-mono text-[10px] tracking-[0.18em] uppercase text-teal mb-3 flex items-center gap-2.5">
-          <span className="block w-[18px] h-px bg-teal" />
-          Three products
-        </div>
-        <h2 className="font-serif text-[clamp(36px,4.2vw,58px)] font-medium tracking-[0.01em] leading-[1.1] mb-5 text-white">
-          One platform.
-          <br />
-          <em className="italic text-teal font-normal">Three ways to win.</em>
-        </h2>
-        <p className="text-[15px] font-light text-white/[0.55] max-w-[520px] leading-[1.85] mb-[64px]">
-          Earn on idle cash. Bank globally. Manage everything with AI — at a fraction of the current
-          cost.
-        </p>
-
-        <div
-          ref={ref}
-          className={`grid grid-cols-1 md:grid-cols-3 gap-px bg-white/5 mt-[64px] transition-all duration-[650ms] ease-out ${
-            isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-          }`}
-        >
-          {products.map((product, i) => (
-            <div
-              key={product.name}
-              className="bg-lapis-deep px-10 py-12 border border-white/[0.06] relative overflow-hidden group hover:bg-lapis/55 hover:border-white/[0.12] transition-all duration-[250ms]"
-              style={{ transitionDelay: `${i * 75}ms` }}
-            >
-              <div
-                className={`absolute top-0 left-0 right-0 h-0.5 ${product.accentColor} opacity-40 group-hover:opacity-100 transition-opacity duration-[250ms]`}
-              />
-              <div
-                className={`w-10 h-10 rounded-[9px] flex items-center justify-center mb-6 ${product.iconBg}`}
-              >
-                {product.icon}
-              </div>
-              <div className={`font-serif text-[48px] font-semibold leading-none mb-[6px] ${product.yieldColor}`}>
-                {product.yield}
-              </div>
-              <div className="font-serif text-[22px] font-medium text-white mb-3.5">{product.name}</div>
-              <p className="text-[13px] font-light text-white/[0.62] leading-[1.8] mb-6">
-                {product.desc}
-              </p>
-              <div className="flex flex-wrap gap-[5px]">
-                {product.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="text-[10px] bg-white/[0.09] rounded px-2 py-[3px] text-white/[0.55] font-mono"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </div>
-          ))}
+    <section className="section" id="products">
+      <div className="container">
+        <p className="section-label">Three products</p>
+        <h2 className="products-headline">One platform. <em>Three ways to win.</em></h2>
+        <div className="product-cols">
+          <div className="product-col first">
+            <div className="pc-tag">Slekt Earn</div>
+            <div className="pc-name">2–8% on your cash</div>
+            <p className="pc-tagline">EU Gov. Bonds · US Treasuries · Emerging Markets</p>
+            <p className="pc-desc">Earn a real return on your business cash. Choose your risk. Your money works from day one.</p>
+            <ul className="pc-list">
+              <li>EU Government Bonds</li>
+              <li>US Treasuries</li>
+              <li>Corporate Bonds</li>
+              <li>Emerging Markets</li>
+            </ul>
+          </div>
+          <div className="product-col">
+            <div className="pc-tag">Slekt Pay</div>
+            <div className="pc-name">80% cheaper banking</div>
+            <p className="pc-tagline">Named IBAN · Multi-currency · Credit Card</p>
+            <p className="pc-desc">Named IBAN, multi-currency account, credit card, and global payments — 80% cheaper than your bank.</p>
+            <ul className="pc-list">
+              <li>Named IBAN</li>
+              <li>Multi-currency accounts</li>
+              <li>Global payments</li>
+              <li>Credit Card</li>
+            </ul>
+          </div>
+          <div className="product-col">
+            <div className="pc-tag">Slekt Banking OS</div>
+            <div className="pc-name">Your AI co-founder</div>
+            <p className="pc-tagline">Claude · ChatGPT · Custom Tools</p>
+            <p className="pc-desc">Integrate everything, connect to Claude and ChatGPT, build custom tools. No dev team needed.</p>
+            <ul className="pc-list">
+              <li>AI Advisors</li>
+              <li>Custom Apps</li>
+              <li>Claude · ChatGPT</li>
+              <li>Auto Reports</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
