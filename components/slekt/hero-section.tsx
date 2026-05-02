@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 
@@ -19,7 +21,7 @@ export function HeroSection() {
       <div className="relative z-[1]">
         <p className="font-mono text-[11px] tracking-[0.18em] uppercase text-gold mb-6 flex items-center gap-3 animate-fade-up">
           <span className="block w-6 h-px bg-gold" />
-          Banking 3.0 — AI-Native Platform
+          Slekt Capital — Banking 3.0
         </p>
 
         <h1 className="font-serif text-[clamp(40px,6vw,84px)] font-medium text-white tracking-[0.01em] leading-[1.05] max-w-[860px] mb-7 animate-fade-up-delay-1">
@@ -34,8 +36,8 @@ export function HeroSection() {
 
         <p className="text-base font-light text-mist max-w-[520px] leading-[1.85] mb-11 animate-fade-up-delay-2">
           Legacy banks run on 1980s mainframes. The first neobanks moved to the cloud but kept the
-          same mental model. Slekt is different — a core banking OS where AI is the architecture
-          itself.
+          same mental model. Slekt is something different. A core banking OS where AI isn&apos;t a feature
+          bolted on top, it&apos;s the architecture itself.
         </p>
 
         <div className="flex gap-3.5 items-center animate-fade-up-delay-3">
@@ -47,10 +49,10 @@ export function HeroSection() {
             Join the Waitlist
           </Link>
           <Link
-            href="#products"
+            href="#how-it-works"
             className="text-mist text-sm font-light inline-flex items-center gap-1.5 pb-0.5 border-b border-mist/30 hover:text-white hover:border-mist transition-colors"
           >
-            See how it works
+            How it works
           </Link>
         </div>
       </div>

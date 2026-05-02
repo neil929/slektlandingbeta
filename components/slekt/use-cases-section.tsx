@@ -4,50 +4,26 @@ import { useInView } from "@/hooks/use-in-view"
 
 const useCases = [
   {
-    title: "Business owner with idle cash",
+    title: "Business owner with cash sitting idle",
     desc: (
       <>
-        You have €200k sitting doing nothing. Your bank offers 0.1% if you are lucky. With Slekt,
-        that money <span className="bg-gold/20 text-gold font-medium px-[5px] py-px rounded">earns 2–5% automatically</span>,
-        pulling back instantly when payroll hits.
+        You&apos;ve got €200k in your business account. It&apos;s doing nothing. With Slekt, that money is working from day one, <span className="bg-gold/20 text-gold font-medium px-[5px] py-px rounded">earning 2–5% automatically</span>, pulling back instantly when payroll hits.
       </>
     ),
   },
   {
-    title: "Entrepreneur with multiple entities",
+    title: "The entrepreneur running multiple companies",
     desc: (
       <>
-        Holding, operating company, side project — three banks, three logins, three sets of
-        statements.{" "}
-        <span className="bg-gold/20 text-gold font-medium px-[5px] py-px rounded">
-          Slekt puts them in one place.
-        </span>{" "}
-        Move money between entities in seconds.
+        You&apos;ve got a holding, an operating company, maybe a third entity for a side project. Right now that means three banks, three logins, three sets of statements to reconcile at year-end. <span className="bg-gold/20 text-gold font-medium px-[5px] py-px rounded">Slekt puts them in one place.</span> Move money between entities in seconds. One dashboard. One view of everything.
       </>
     ),
   },
   {
-    title: "Founder wearing multiple hats",
+    title: "A founder wearing multiple hats",
     desc: (
       <>
-        You are closing deals and managing the team. Your{" "}
-        <span className="bg-gold/20 text-gold font-medium px-[5px] py-px rounded">
-          AI advisor monitors transactions
-        </span>
-        , flags anomalies, forecasts cash flow, and has board-ready reports ready when asked.
-      </>
-    ),
-  },
-  {
-    title: "Building wealth for your family",
-    desc: (
-      <>
-        Traditional family offices serve the 0.1%. Slekt gives you the same investment products and
-        AI advisors{" "}
-        <span className="bg-gold/20 text-gold font-medium px-[5px] py-px rounded">
-          at a fraction of the cost
-        </span>{" "}
-        — for every founder building generational wealth.
+        You&apos;re closing deals, managing the team and handling operations and don&apos;t have the time for finances. Your <span className="bg-gold/20 text-gold font-medium px-[5px] py-px rounded">AI advisor monitors transactions</span>, flags anomalies, forecasts cash flow, and has reports ready when someone asks.
       </>
     ),
   },
@@ -60,21 +36,20 @@ export function UseCasesSection() {
     <section className="bg-deep py-[72px] px-5 md:py-28 md:px-[60px]">
       <div className="font-mono text-[10px] tracking-[0.18em] uppercase text-gold mb-2.5 flex items-center gap-2.5">
         <span className="block w-[18px] h-px bg-gold" />
-        Who it is for
+        Section ten — Use cases
       </div>
       <h2 className="font-serif text-[clamp(36px,4.2vw,58px)] font-medium tracking-[0.01em] leading-[1.1] mb-[18px] text-white">
         If your business holds cash,
         <br />
-        <em className="italic text-gold font-normal">Slekt was built for you</em>
+        <em className="italic text-gold font-normal">Slekt was built for you.</em>
       </h2>
       <p className="text-base font-light text-mist max-w-[520px] leading-[1.85] mb-[60px]">
-        You do not need a treasury department. You need your money working while you run the
-        business.
+        You don&apos;t need a treasury department. You need your money working while you&apos;re busy running the business.
       </p>
 
       <div
         ref={ref}
-        className={`grid grid-cols-1 md:grid-cols-2 gap-3.5 mt-[60px] transition-all duration-[650ms] ease-out ${
+        className={`grid grid-cols-1 md:grid-cols-3 gap-4 transition-all duration-[650ms] ease-out ${
           isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
         }`}
       >

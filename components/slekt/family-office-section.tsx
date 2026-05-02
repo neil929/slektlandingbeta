@@ -4,24 +4,24 @@ import { useInView } from "@/hooks/use-in-view"
 
 const items = [
   {
-    num: "01",
-    title: "Earn a real rate on cash",
-    desc: "Government bonds, corporate bonds, higher-yield options. You pick the risk. 2–8% from day one.",
+    num: "1",
+    title: "Earn a real rate on your cash.",
+    desc: "Government bonds, corporate bonds, higher-yield options. You pick the risk. Your cash doesn't sit idle anymore.",
   },
   {
-    num: "02",
-    title: "All accounts in one place",
-    desc: "Open accounts for all your companies and family members. Move money seamlessly within your group.",
+    num: "2",
+    title: "Manage all accounts in one place.",
+    desc: "Open accounts for all your companies and children in one place. Move money seamlessly within your group.",
   },
   {
-    num: "03",
-    title: "Your AI advisory team",
-    desc: "Specialist agents act as your CFO, wealth advisor, and tax helper — the support level reserved for large family offices.",
+    num: "3",
+    title: "Your team",
+    desc: "Our specially trained AI agents act as your advisors, providing you with the same level of support previously reserved for large family offices and corporates.",
   },
   {
-    num: "04",
-    title: "Privacy by default",
-    desc: "End-to-end encrypted. EU data residency. Your financial life is yours. Helsinki-regulated, MiFID II.",
+    num: "4",
+    title: "Privacy by default.",
+    desc: "End-to-end encrypted. EU data residency. Your financial life is yours.",
   },
 ]
 
@@ -32,16 +32,21 @@ export function FamilyOfficeSection() {
     <section className="bg-frost py-[72px] px-5 md:py-28 md:px-[60px]" id="family-office">
       <div className="font-mono text-[10px] tracking-[0.18em] uppercase text-royal mb-2.5 flex items-center gap-2.5">
         <span className="block w-[18px] h-px bg-royal" />
-        For every business owner
+        Section five
       </div>
       <h2 className="font-serif text-[clamp(36px,4.2vw,58px)] font-medium tracking-[0.01em] leading-[1.1] mb-[18px] text-navy">
         Build your own
         <br />
         <em className="italic text-royal font-normal">Family Office</em>
       </h2>
-      <p className="text-base font-light text-mist max-w-[520px] leading-[1.85] mb-[60px]">
-        A traditional family office needs €25M+ in assets, Goldman relationships, and a team of 10.
-        It was designed for the 0.1%.
+      <p className="text-base font-light text-mist max-w-[580px] leading-[1.85] mb-4">
+        A traditional Family Office requires at least €25 million in assets, dozens of staff, and relationships with top-tier banks like Goldman Sachs.
+      </p>
+      <p className="text-lg font-medium text-navy mb-4">
+        It was never designed for you. It was designed for the 0.1%
+      </p>
+      <p className="text-base font-light text-mist max-w-[580px] leading-[1.85] mb-[60px]">
+        Every hard-working business owner deserves the best advice, tools and financial products to build wealth.
       </p>
 
       <div
@@ -59,7 +64,7 @@ export function FamilyOfficeSection() {
               Slekt
             </div>
             <div className="text-xs text-mist/60 mt-1">
-              family · clan · lineage · kin
+              (Noun) - means family, clan, lineage, kin
               <br />
               <span className="font-mono text-[9px] tracking-[0.1em] opacity-60">
                 IN NORDIC LANGUAGES
@@ -67,25 +72,9 @@ export function FamilyOfficeSection() {
             </div>
           </div>
 
-          <p className="font-serif text-2xl font-normal italic text-navy/70 leading-[1.5] max-w-[320px] mb-7">
-            &ldquo;Every hard-working business owner deserves the best advice, tools and products to
-            build wealth.&rdquo;
+          <p className="font-serif text-xl font-normal text-navy/70 leading-[1.5] max-w-[400px]">
+            The Slekt platform acts as your own family office to help you build wealth without the costs associated with traditional advisors, banks and investment houses.
           </p>
-
-          <div className="p-[22px] bg-gold/15 border border-gold/40 rounded-[11px]">
-            <div className="font-mono text-[9px] tracking-[0.16em] uppercase text-gold mb-[7px]">
-              Previously reserved for
-            </div>
-            <div className="font-serif text-xl font-medium text-navy mb-2">
-              Old money. Goldman clients.
-              <br />
-              €25M+ only.
-            </div>
-            <p className="text-xs font-light text-navy/70 leading-[1.7]">
-              Slekt gives every founder and entrepreneur the same investment products and AI advisors
-              — without the gatekeeping.
-            </p>
-          </div>
         </div>
 
         <div className="flex flex-col gap-5">
@@ -95,7 +84,7 @@ export function FamilyOfficeSection() {
               className="flex gap-[18px] items-start p-[22px] bg-white border border-mist/30 rounded-[11px] hover:border-royal/40 hover:translate-x-1 transition-all duration-200"
               style={{ transitionDelay: `${(i + 1) * 80}ms` }}
             >
-              <div className="font-serif text-[32px] font-semibold text-mist/30 leading-none shrink-0 w-11">
+              <div className="font-serif text-[32px] font-semibold text-gold leading-none shrink-0 w-8">
                 {item.num}
               </div>
               <div>

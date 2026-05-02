@@ -27,17 +27,18 @@ export function CtaSection() {
       <div className="relative z-[1] flex flex-col items-center">
         <div className="font-mono text-[10px] tracking-[0.20em] uppercase text-gold mb-[22px] flex items-center gap-3">
           <span className="block w-[18px] h-px bg-gold" />
-          Coming soon · Be first
+          Section twelve — Closing CTA
           <span className="block w-[18px] h-px bg-gold" />
         </div>
 
         <h2 className="font-serif text-[clamp(38px,5vw,68px)] font-medium text-white tracking-[0.01em] leading-[1.05] max-w-[720px] mb-[18px]">
-          The wealth infrastructure
-          <br />
-          for Europe&apos;s <em className="italic text-gold font-normal">entrepreneurial class.</em>
+          The wealth infrastructure for Europe&apos;s <em className="italic text-gold font-normal">entrepreneurial class.</em>
         </h2>
+        <p className="text-lg font-medium text-gold mb-4">
+          Coming soon.
+        </p>
 
-        <p className="text-base font-light text-mist max-w-[420px] leading-[1.8] mb-11">
+        <p className="text-base font-light text-mist max-w-[480px] leading-[1.8] mb-11">
           We are building something Europe has never had. Be the first to know when it is ready.
         </p>
 
@@ -57,7 +58,7 @@ export function CtaSection() {
             type="submit"
             className="bg-gold text-midnight border-none cursor-pointer font-sans text-sm font-semibold px-6 py-[15px] whitespace-nowrap hover:bg-gold/90 transition-colors"
           >
-            Join Waitlist
+            Join the Waitlist
           </button>
         </form>
 

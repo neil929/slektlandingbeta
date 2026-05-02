@@ -7,13 +7,13 @@ const layers = [
     num: "01",
     tag: "Layer one",
     title: "AI writes the infrastructure",
-    desc: "Integrations, compliance rules, and product features deploy in days — not the years a traditional bank requires.",
+    desc: "Integrations, compliance rules, and product features deploy in days, not the years a traditional bank requires.",
   },
   {
     num: "02",
     tag: "Layer two",
     title: "Agents that know your business",
-    desc: "Specialist AI trained on treasury, onboarding, accounting, and wealth management. Not a generic chatbot over documents.",
+    desc: "Specialist AI trained on financial operations: treasury, onboarding, accounting, wealth management — not a generic chatbot over documents.",
   },
   {
     num: "03",
@@ -35,16 +35,12 @@ export function LayersSection() {
       <h2 className="font-serif text-[clamp(36px,4.2vw,58px)] font-medium tracking-[0.01em] leading-[1.1] mb-[18px] text-white">
         We use this technology
         <br />
-        to solve <em className="italic text-gold font-normal">real problems.</em>
+        to solve <em className="italic text-gold font-normal">real-world problems.</em>
       </h2>
-      <p className="text-base font-light text-mist max-w-[520px] leading-[1.85] mb-[60px]">
-        Slekt is built in three layers. Each enables something no legacy or first-gen fintech can
-        provide.
-      </p>
 
       <div
         ref={ref}
-        className={`grid grid-cols-1 md:grid-cols-3 gap-0.5 transition-all duration-[650ms] ease-out ${
+        className={`grid grid-cols-1 md:grid-cols-3 gap-0.5 mt-[60px] transition-all duration-[650ms] ease-out ${
           isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
         }`}
       >
@@ -68,6 +64,10 @@ export function LayersSection() {
           </div>
         ))}
       </div>
+
+      <p className="text-center text-mist mt-16 max-w-3xl mx-auto text-base leading-relaxed">
+        Legacy and first-gen fintech systems cannot be retrofitted into this. The architecture is incompatible. Slekt has to be built new and that is exactly what we are doing.
+      </p>
     </section>
   )
 }

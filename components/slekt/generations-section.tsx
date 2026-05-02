@@ -6,40 +6,39 @@ const generations = [
   {
     variant: "v1",
     badge: "Banking 1.0",
-    era: "Legacy Banks",
-    sub: "1980s – 90s · Server-based",
+    era: "Old legacy banking systems",
+    sub: "Built 80s/90s · Server-based",
     features: [
-      "No customisation, static systems",
-      "Bare-minimum features only",
-      "No advice, no personalisation",
-      "Decades behind on UX",
+      "Very static with no change",
+      "Bare minimum banking features",
+      "No advice or ability to customise anything",
     ],
   },
   {
     variant: "v2",
     badge: "Banking 2.0",
-    era: "First-Gen Fintech",
+    era: "First generation fintechs",
     sub: "Revolut, Wise · Cloud-native",
     features: [
-      "Cloud infrastructure, better UI",
-      "Fast integrations, modern UX",
-      "Added investing, eSIMs, extras",
-      "Still basic banking at the core",
+      "Cloud approach, modern technology",
+      "Faster integration and better UX/UI",
+      "Adding user friendly services like eSIMs, investments",
+      "But still basic banking features",
     ],
   },
   {
     variant: "v3",
     badge: "Banking 3.0",
     era: "Slekt Banking OS",
-    sub: "AI-native · Fully customisable",
+    sub: "Next Generation · AI-native",
     features: [
-      "AI writes and deploys code",
-      "Full data and integration flexibility",
-      "Specialist AI advisor team",
-      "Fully customisable at user level",
-      "Connects to Claude · ChatGPT",
+      "Full flexibility on user experience and personal feel",
+      "Acts first as a team of expert advisors which also does banking",
+      "Full flexibility on integrations and data management",
+      "The entire app can be re-written at user level to be fully customisable",
+      "No more just choosing between night and day mode",
     ],
-    note: "The previous two generations cannot be converted to this architecture. Slekt is built new, from scratch.",
+    note: "The old banking systems cannot be changed to modern versions cause they are so bad, and the current fintech ones cannot be changed to AI native. Slekt is building something completely new.",
   },
 ]
 
@@ -91,21 +90,17 @@ export function GenerationsSection() {
     <section className="bg-frost py-[72px] px-5 md:py-28 md:px-[60px]" id="banking30">
       <div className="font-mono text-[10px] tracking-[0.18em] uppercase text-royal mb-2.5 flex items-center gap-2.5">
         <span className="block w-[18px] h-px bg-royal" />
-        Why now
+        Section 8
       </div>
-      <h2 className="font-serif text-[clamp(36px,4.2vw,58px)] font-medium tracking-[0.01em] leading-[1.1] mb-[18px] text-navy">
+      <h2 className="font-serif text-[clamp(36px,4.2vw,58px)] font-medium tracking-[0.01em] leading-[1.1] mb-[60px] text-navy">
         Three generations of
         <br />
-        <em className="italic text-royal font-normal">banking technology</em>
+        <em className="italic text-royal font-normal">Banking technology.</em>
       </h2>
-      <p className="text-base font-light text-mist max-w-[520px] leading-[1.85] mb-[60px]">
-        Legacy and first-gen fintech systems cannot be retrofitted into AI-native architecture. The
-        codebase is incompatible. Slekt must be built new — and that is exactly what we are doing.
-      </p>
 
       <div
         ref={ref}
-        className={`grid grid-cols-1 md:grid-cols-3 gap-3.5 mt-[60px] transition-all duration-[650ms] ease-out ${
+        className={`grid grid-cols-1 md:grid-cols-3 gap-3.5 transition-all duration-[650ms] ease-out ${
           isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
         }`}
       >
