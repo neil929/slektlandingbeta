@@ -1,42 +1,43 @@
 export function HowItWorksSection() {
   return (
-    <section className="section section-navy" id="how-it-works">
+    <section className="section section-white" id="howitworks">
       <div className="container">
-        <p className="section-label">How it works</p>
-        <h2>From zero to earning<br /><em>in four steps</em></h2>
+        <div className="section-label">Section 06 — How It Works</div>
         <div className="how-intro">
-          <p>Onboard in minutes. No paperwork, no branch visit. Your business cash starts earning from day one.</p>
+          <h2>Here&apos;s how you go from 0 to <em>earning</em></h2>
+          <br />
+          <p>Onboard in minutes. Earn from day one. Withdraw in seconds.</p>
         </div>
         <div className="steps">
           <div className="step">
-            <div className="step-num">01</div>
+            <div className="step-num">1</div>
             <h4>Open the account</h4>
-            <p>Onboard in minutes from phone or laptop. No paperwork, no branch visit.</p>
+            <p>Onboard in minutes from your phone or laptop. No paperwork, no branch visit.</p>
           </div>
           <div className="step">
-            <div className="step-num">02</div>
+            <div className="step-num">2</div>
             <h4>Deposit instantly</h4>
-            <p>Add funds immediately. No waiting periods, no minimum holding times.</p>
+            <p>Add funds to your account instantly.</p>
           </div>
           <div className="step">
-            <div className="step-num">03</div>
-            <h4>Earn from day one</h4>
-            <p>Your balance earns 2–8% automatically. You choose the risk: EU government bonds to emerging markets.</p>
+            <div className="step-num">3</div>
+            <h4>Earn from day one.</h4>
+            <p>Your balance starts earning 2–8% automatically. You choose the risk level. EU government bonds to earn 2% for a bit higher on corporate bonds.</p>
           </div>
           <div className="step">
-            <div className="step-num">04</div>
-            <h4>Withdraw in seconds</h4>
-            <p>Move money back instantly. Ready for payroll, suppliers, or whatever comes next. No lock-in.</p>
+            <div className="step-num">4</div>
+            <h4>Withdraw in seconds.</h4>
+            <p>Move money back to your primary account instantly. Ready to pay salaries, suppliers, or whatever comes next.</p>
           </div>
         </div>
         <div className="addons">
           <div className="addon">
-            <div className="addon-tag">Multi-entity</div>
-            <p>Open accounts for all your companies and family members. Move money seamlessly within your group.</p>
+            <div className="addon-tag">+ Add-on Banking</div>
+            <p>Do also your banking with Slekt. Add your own multi-currency business account, global payments and cards.</p>
           </div>
           <div className="addon">
-            <div className="addon-tag">AI Advisory</div>
-            <p>Your AI advisor monitors transactions, flags anomalies, forecasts cash flow, and generates board-ready reports.</p>
+            <div className="addon-tag">+ Add-on Family OS</div>
+            <p>Our AI team members do work to build your wealth and help you manage your business. AI built native apps that are fully customizable for your needs.</p>
           </div>
         </div>
       </div>

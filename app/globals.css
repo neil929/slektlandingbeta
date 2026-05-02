@@ -270,7 +270,7 @@ h2 em { font-style: italic; color: var(--gold); }
 .badge-sub { font-size: 13px; color: var(--mist); font-weight: 300; }
 
 /* SECTION 12 — CTA */
-#waitlist { text-align: center; padding: 120px 5%; position: relative; overflow: hidden; }
+#cta { text-align: center; padding: 120px 5%; position: relative; overflow: hidden; }
 .cta-inner { position: relative; z-index: 2; max-width: 640px; margin: 0 auto; }
 .cta-inner h2 { font-family: var(--font-display); font-size: clamp(34px,5vw,56px); font-weight: 400; line-height: 1.12; margin-bottom: 20px; }
 .cta-inner h2 em { font-style: italic; color: var(--gold); }

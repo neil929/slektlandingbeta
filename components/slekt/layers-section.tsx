@@ -1,59 +1,51 @@
 export function LayersSection() {
   return (
-    <section className="section" id="technology">
+    <section className="section section-alt" id="technology">
       <div className="container">
-        <p className="section-label">Platform architecture</p>
-        <h2>We use this technology<br />to solve <em>real problems.</em></h2>
+        <div className="section-label">Section 07 — Technology Under the Hood</div>
         <div className="tech-grid">
           <div className="tech-intro">
-            <p>Slekt is built in three layers. Each enables something no legacy or first-gen fintech can provide.</p>
-            <p>Integrations, compliance rules, and product features deploy in days — not the years a traditional bank requires.</p>
+            <h2>Built different from the <em>ground up.</em></h2>
+            <br />
+            <p>Our team has built multiple Fintechs and Neobanking software which our customers loved and the banks hated because it was better than theirs.</p>
+            <p>Our newest one is something even better.</p>
+            <p>Slekt is built on an AI native platform.</p>
           </div>
           <div className="tech-features">
             <div className="tech-feature">
               <div className="tech-icon">
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                  <path d="M2 9L9 2L16 9L9 16Z" stroke="#A8C0E0" strokeWidth="1.4" />
-                </svg>
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3v9l4 4"/></svg>
               </div>
               <div className="tech-feature-body">
-                <h4>AI writes the infrastructure</h4>
-                <p>Integrations, compliance rules, and product features deploy in days — not years.</p>
+                <h4>AI co-founders for users</h4>
+                <p>Specialised team to help you in everything banking. AI integration agents to connect all your data sources like Stripe and your banks into our App.</p>
               </div>
             </div>
             <div className="tech-feature">
               <div className="tech-icon">
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                  <circle cx="9" cy="9" r="7" stroke="#A8C0E0" strokeWidth="1.4" />
-                  <path d="M6 9h6M9 6v6" stroke="#A8C0E0" strokeWidth="1.4" strokeLinecap="round" />
-                </svg>
+                <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 12h8M12 8v8"/></svg>
               </div>
               <div className="tech-feature-body">
-                <h4>Agents that know your business</h4>
-                <p>Specialist AI trained on treasury, onboarding, accounting, and wealth management.</p>
+                <h4>AI native app platform</h4>
+                <p>Build the tools you need directly on top of our products. No need to wait for our dev team. Connect Slekt to Claude and ChatGPT.</p>
               </div>
             </div>
             <div className="tech-feature">
               <div className="tech-icon">
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                  <rect x="2" y="4" width="14" height="10" rx="2" stroke="#A8C0E0" strokeWidth="1.4" />
-                  <path d="M6 9h6" stroke="#A8C0E0" strokeWidth="1.4" strokeLinecap="round" />
-                </svg>
+                <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
               </div>
               <div className="tech-feature-body">
-                <h4>Users build their own bank</h4>
-                <p>Need invoicing? A custom report? Build it directly into the platform. No dev team required.</p>
+                <h4>AI native corebanking OS</h4>
+                <p>Reimagines how corebanking should work and scale. AI writes code at scale so we can integrate and deploy features in days rather than years.</p>
               </div>
             </div>
             <div className="tech-feature">
               <div className="tech-icon">
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                  <path d="M3 13L7 9L10 12L15 6" stroke="#A8C0E0" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
+                <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
               </div>
               <div className="tech-feature-body">
-                <h4>Connect to Claude · ChatGPT</h4>
-                <p>Full data and integration flexibility. The interface is yours to modify.</p>
+                <h4>Security by design</h4>
+                <p>Specialist AI agents trained to handle all key tasks — onboarding, AML, transaction monitoring. Platform built with security in mind to ensure safety of your data, actions and transactions.</p>
               </div>
             </div>
           </div>

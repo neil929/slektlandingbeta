@@ -1,44 +1,45 @@
 export function ProductsSection() {
   return (
-    <section className="section" id="products">
+    <section className="section section-navy" id="products">
       <div className="container">
-        <p className="section-label">Three products</p>
-        <h2 className="products-headline">One platform. <em>Three ways to win.</em></h2>
+        <div className="section-label">Section 04 — Solution</div>
+        <h2 className="products-headline">Three key products combined into <em>Slekt Capital</em></h2>
         <div className="product-cols">
           <div className="product-col first">
-            <div className="pc-tag">Slekt Earn</div>
-            <div className="pc-name">2–8% on your cash</div>
-            <p className="pc-tagline">EU Gov. Bonds · US Treasuries · Emerging Markets</p>
-            <p className="pc-desc">Earn a real return on your business cash. Choose your risk. Your money works from day one.</p>
+            <div className="pc-tag">Product 01</div>
+            <div className="pc-name">Slekt Earn</div>
+            <div className="pc-tagline">Earn 2% to 8% on your business current account</div>
+            <p className="pc-desc">Choose your risk and return. Your capital works from day one.</p>
             <ul className="pc-list">
-              <li>EU Government Bonds</li>
-              <li>US Treasuries</li>
+              <li>European government Bonds</li>
+              <li>US treasury Bonds</li>
+              <li>Tier-1 Bank guaranteed assets</li>
               <li>Corporate Bonds</li>
-              <li>Emerging Markets</li>
+              <li>Emerging markets bonds</li>
             </ul>
           </div>
           <div className="product-col">
-            <div className="pc-tag">Slekt Pay</div>
-            <div className="pc-name">80% cheaper banking</div>
-            <p className="pc-tagline">Named IBAN · Multi-currency · Credit Card</p>
-            <p className="pc-desc">Named IBAN, multi-currency account, credit card, and global payments — 80% cheaper than your bank.</p>
+            <div className="pc-tag">Product 02</div>
+            <div className="pc-name">Slekt Pay</div>
+            <div className="pc-tagline">Global payments 80% cheaper</div>
+            <p className="pc-desc">Get a named IBAN account, credit card, multi-currency account and global payments 80% cheaper than your existing bank.</p>
             <ul className="pc-list">
-              <li>Named IBAN</li>
-              <li>Multi-currency accounts</li>
+              <li>Named IBAN account</li>
+              <li>Credit card</li>
+              <li>Multi-currency account</li>
               <li>Global payments</li>
-              <li>Credit Card</li>
             </ul>
           </div>
           <div className="product-col">
-            <div className="pc-tag">Slekt Banking OS</div>
-            <div className="pc-name">Your AI co-founder</div>
-            <p className="pc-tagline">Claude · ChatGPT · Custom Tools</p>
-            <p className="pc-desc">Integrate everything, connect to Claude and ChatGPT, build custom tools. No dev team needed.</p>
+            <div className="pc-tag">Product 03</div>
+            <div className="pc-name">Slekt Banking OS</div>
+            <div className="pc-tagline">Your AI co-founder</div>
+            <p className="pc-desc">Our revolutionary AI-built banking operating system helps you manage your business.</p>
             <ul className="pc-list">
-              <li>AI Advisors</li>
-              <li>Custom Apps</li>
-              <li>Claude · ChatGPT</li>
-              <li>Auto Reports</li>
+              <li>Integrate everything — connect all your banks and payments via AI agent</li>
+              <li>Use Slekt with Claude, ChatGPT</li>
+              <li>Your personal CFO, wealth advisor, treasury advisor, tax helper</li>
+              <li>AI native apps — fully customizable for your needs</li>
             </ul>
           </div>
         </div>
