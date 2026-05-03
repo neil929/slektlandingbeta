@@ -209,6 +209,7 @@ h2 em { font-style: italic; color: var(--gold); }
 .tech-features { display: flex; flex-direction: column; gap: 2px; }
 .tech-feature { background: var(--midnight); padding: 24px; display: flex; gap: 16px; align-items: flex-start; }
 .tech-icon { width: 36px; height: 36px; background: var(--royal); flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+.tech-icon svg { width: 18px; height: 18px; fill: none; stroke: var(--white); stroke-width: 1.5; }
 .tech-feature-body h4 { font-size: 15px; font-weight: 500; color: var(--white); margin-bottom: 6px; }
 .tech-feature-body p { font-size: 14px; color: var(--mist); font-weight: 300; line-height: 1.6; }
 
