@@ -266,6 +266,7 @@ h2 em { font-style: italic; color: var(--gold); }
 .security-badges { display: flex; flex-direction: column; gap: 2px; }
 .security-badge { background: var(--deep); padding: 22px 24px; display: flex; align-items: center; gap: 16px; }
 .badge-icon { width: 40px; height: 40px; background: var(--midnight); border: 1px solid rgba(26,79,160,0.4); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.badge-icon svg { width: 20px; height: 20px; stroke: #ffffff; fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
 .badge-label { font-size: 14px; font-weight: 500; color: var(--white); margin-bottom: 3px; }
 .badge-sub { font-size: 13px; color: var(--mist); font-weight: 300; }
 
