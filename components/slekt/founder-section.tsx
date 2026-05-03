@@ -6,7 +6,7 @@ export function FounderSection() {
         <div className="founder-card">
           <div className="founder-left">
             <div className="founder-photo-wrap">
-              <img src="/neil-ambikar.jpg" alt="Neil Ambikar" className="founder-photo" />
+              <img src="/neil-ambikar.webp" alt="Neil Ambikar" className="founder-photo" />
             </div>
             <div className="founder-identity">
               <div className="founder-name">Neil Ambikar</div>
