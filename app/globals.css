@@ -153,6 +153,10 @@ h1 em { font-style: italic; color: var(--gold); }
 .section-gold .email-form input::placeholder { color: rgba(11,27,56,0.4); }
 .section-gold .email-form button { background: var(--midnight); color: var(--gold); }
 .section-gold .cta-footnote { color: rgba(11,27,56,0.45); }
+.section-gold .waitlist-fields input { background: rgba(11,27,56,0.08); border-color: rgba(11,27,56,0.2); color: var(--midnight); }
+.section-gold .waitlist-fields input::placeholder { color: rgba(11,27,56,0.4); }
+.section-gold .waitlist-btn { background: var(--midnight); color: var(--gold); }
+.section-gold .cta-success { color: var(--midnight); }
 
 /* SECTION 3 — MARKET PROBLEM */
 .problem-intro { max-width: 700px; margin-bottom: 64px; }
