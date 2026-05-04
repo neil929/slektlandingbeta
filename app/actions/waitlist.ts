@@ -1,11 +1,6 @@
 "use server"
 
-import { createClient } from "@supabase/supabase-js"
-
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-)
+import { getSupabaseServer } from "@/lib/supabase"
 
 export async function submitWaitlist(formData: FormData) {
   // Honeypot — bots fill this, humans don't
@@ -24,6 +19,8 @@ export async function submitWaitlist(formData: FormData) {
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
   if (!emailRegex.test(email)) return { error: "Please enter a valid email address." }
+
+  const supabase = getSupabaseServer()
 
   const { error } = await supabase
     .from("waitlist")
