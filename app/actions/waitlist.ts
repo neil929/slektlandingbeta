@@ -15,7 +15,7 @@ export async function submitWaitlist(formData: FormData) {
   const company = (formData.get("company") as string || "").trim()
   const email = (formData.get("email") as string || "").trim()
 
-  if (!name || !email) return { error: "Please fill in your name and email." }
+  if (!name || !company || !email) return { error: "Please fill in all fields." }
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
   if (!emailRegex.test(email)) return { error: "Please enter a valid email address." }

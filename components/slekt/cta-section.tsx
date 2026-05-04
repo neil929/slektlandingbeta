@@ -70,7 +70,8 @@ export function CtaSection() {
                 <input
                   type="text"
                   name="company"
-                  placeholder="Company name (optional)"
+                  placeholder="Company name"
+                  required
                   disabled={status === "loading"}
                 />
                 <input
