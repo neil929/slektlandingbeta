@@ -2,7 +2,7 @@ export function GenerationsSection() {
   return (
     <section className="section section-white" id="generations">
       <div className="container">
-        <div className="section-label">Section 08 — Three Generations of Banking Technology</div>
+        <div className="section-label">Three Generations of Banking Technology</div>
         <h2 style={{ marginBottom: '48px' }}>Where <em>Banking 3.0</em> begins.</h2>
         <div className="generations">
           <div className="gen-card gen-1">

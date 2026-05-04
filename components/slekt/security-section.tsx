@@ -2,7 +2,7 @@ export function SecuritySection() {
   return (
     <section className="section section-navy" id="security">
       <div className="container">
-        <div className="section-label">Section 11 — Security &amp; Regulation</div>
+        <div className="section-label">Security &amp; Regulation</div>
         <div className="security-grid">
           <div className="security-text">
             <h2>Nordic regulation. Bank-grade segregation. <em>End-to-end encryption.</em></h2>

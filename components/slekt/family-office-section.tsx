@@ -2,7 +2,7 @@ export function FamilyOfficeSection() {
   return (
     <section className="section section-white" id="familyoffice">
       <div className="container">
-        <div className="section-label">Section 05 — Build Your Own Family Office</div>
+        <div className="section-label">Build Your Own Family Office</div>
         <div className="fo-comparison-header">
           <div className="fo-comparison-intro">
             <h2>Build your own <em>Family Office</em></h2>

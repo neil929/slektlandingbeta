@@ -2,7 +2,7 @@ export function FounderSection() {
   return (
     <section className="section section-navy" id="founder">
       <div className="container">
-        <div className="section-label">Section 09 — Founder&apos;s Note</div>
+        <div className="section-label">Founder&apos;s Note</div>
         <div className="founder-card">
           <div className="founder-left">
             <div className="founder-photo-wrap">

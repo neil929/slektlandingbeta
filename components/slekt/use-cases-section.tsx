@@ -2,7 +2,7 @@ export function UseCasesSection() {
   return (
     <section className="section section-white" id="usecases">
       <div className="container">
-        <div className="section-label">Section 10 — Use Cases</div>
+        <div className="section-label">Use Cases</div>
         <div className="use-cases-header">
           <h2>If your business holds cash, <em>Slekt was built for you.</em></h2>
           <p>You don&apos;t need a treasury department. You need your money working while you&apos;re busy running the business.</p>

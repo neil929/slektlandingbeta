@@ -2,7 +2,7 @@ export function LayersSection() {
   return (
     <section className="section section-alt" id="technology">
       <div className="container">
-        <div className="section-label">Section 07 — Technology Under the Hood</div>
+        <div className="section-label">Technology Under the Hood</div>
         <div className="tech-grid">
           <div className="tech-intro">
             <h2>Built different from the <em>ground up.</em></h2>

@@ -2,7 +2,7 @@ export function MarketProblemSection() {
   return (
     <section className="section section-white" id="market">
       <div className="container">
-        <div className="section-label">Section 03 — The Problem</div>
+        <div className="section-label">The Problem</div>
         <div className="problem-intro">
           <h2>Europe has no wealth infrastructure for the <em>new entrepreneurial class.</em></h2>
         </div>

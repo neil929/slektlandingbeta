@@ -2,7 +2,7 @@ export function ProductsSection() {
   return (
     <section className="section section-navy" id="products">
       <div className="container">
-        <div className="section-label">Section 04 — Solution</div>
+        <div className="section-label">Solution</div>
         <h2 className="products-headline">Three key products combined into <em>Slekt Capital</em></h2>
         <div className="product-cols">
           <div className="product-col first">

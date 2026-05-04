@@ -2,7 +2,7 @@ export function HowItWorksSection() {
   return (
     <section className="section section-white" id="howitworks">
       <div className="container">
-        <div className="section-label">Section 06 — How It Works</div>
+        <div className="section-label">How It Works</div>
         <div className="how-intro">
           <h2>Here&apos;s how you go from 0 to <em>earning</em></h2>
           <br />
