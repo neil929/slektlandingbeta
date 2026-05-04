@@ -1,6 +1,11 @@
+"use client"
+
 import Link from "next/link"
+import { useState } from "react"
 
 export function Navigation() {
+  const [open, setOpen] = useState(false)
+
   return (
     <nav>
       <Link href="#" className="nav-logo">
@@ -19,6 +24,19 @@ export function Navigation() {
         <li><Link href="#familyoffice">Family Office</Link></li>
       </ul>
       <Link href="#cta" className="nav-cta">Join Waitlist</Link>
+      <button className="nav-hamburger" onClick={() => setOpen(!open)} aria-label="Toggle menu">
+        <span className={open ? "ham-line open" : "ham-line"}></span>
+        <span className={open ? "ham-line open" : "ham-line"}></span>
+        <span className={open ? "ham-line open" : "ham-line"}></span>
+      </button>
+      {open && (
+        <div className="nav-mobile-menu">
+          <Link href="#products" onClick={() => setOpen(false)}>Products</Link>
+          <Link href="#technology" onClick={() => setOpen(false)}>Technology</Link>
+          <Link href="#familyoffice" onClick={() => setOpen(false)}>Family Office</Link>
+          <Link href="#cta" className="nav-mobile-cta" onClick={() => setOpen(false)}>Join Waitlist</Link>
+        </div>
+      )}
     </nav>
   )
 }
