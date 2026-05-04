@@ -290,14 +290,18 @@ h2 em { font-style: italic; color: var(--gold); }
 .cta-inner { position: relative; z-index: 2; max-width: 640px; margin: 0 auto; }
 .cta-inner h2 { font-family: var(--font-display); font-size: clamp(34px,5vw,56px); font-weight: 400; line-height: 1.12; margin-bottom: 20px; }
 .cta-inner h2 em { font-style: italic; color: var(--gold); }
-.cta-inner p { font-size: 17px; color: var(--mist); font-weight: 300; margin-bottom: 48px; line-height: 1.7; }
-.email-form { display: flex; max-width: 480px; margin: 0 auto 16px; }
-.email-form input { flex: 1; padding: 14px 20px; background: var(--deep); border: 1px solid rgba(168,192,224,0.2); border-right: none; color: var(--white); font-family: var(--font-body); font-size: 15px; outline: none; }
-.email-form input::placeholder { color: rgba(168,192,224,0.4); }
-.email-form input:focus { border-color: rgba(240,192,64,0.5); }
-.email-form button { background: var(--gold); color: var(--midnight); padding: 14px 28px; font-size: 15px; font-weight: 600; font-family: var(--font-body); border: none; cursor: pointer; white-space: nowrap; transition: opacity 0.2s; }
-.email-form button:hover { opacity: 0.88; }
-.cta-footnote { font-size: 13px; color: rgba(168,192,224,0.4); }
+.cta-inner p { font-size: 17px; color: var(--mist); font-weight: 300; margin-bottom: 40px; line-height: 1.7; }
+.waitlist-form { display: flex; flex-direction: column; align-items: center; gap: 12px; width: 100%; max-width: 480px; margin: 0 auto; }
+.waitlist-fields { display: flex; flex-direction: column; gap: 10px; width: 100%; }
+.waitlist-fields input { width: 100%; padding: 14px 20px; background: var(--deep); border: 1px solid rgba(168,192,224,0.2); color: var(--white); font-family: var(--font-body); font-size: 15px; outline: none; box-sizing: border-box; }
+.waitlist-fields input::placeholder { color: rgba(168,192,224,0.4); }
+.waitlist-fields input:focus { border-color: rgba(240,192,64,0.5); }
+.waitlist-btn { width: 100%; background: var(--gold); color: var(--midnight); padding: 15px 28px; font-size: 15px; font-weight: 600; font-family: var(--font-body); border: none; cursor: pointer; transition: opacity 0.2s; letter-spacing: 0.03em; }
+.waitlist-btn:hover { opacity: 0.88; }
+.waitlist-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+.cta-success { font-size: 18px; color: var(--midnight); font-weight: 500; margin-top: 16px; }
+.cta-footnote { font-size: 13px; color: rgba(168,192,224,0.4); margin-top: 4px; }
+.form-trap { position: absolute; left: -9999px; opacity: 0; pointer-events: none; height: 0; }
 
 /* FOOTER */
 footer { background: var(--midnight); border-top: 3px solid var(--gold); padding: 40px 5%; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
