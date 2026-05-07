@@ -3,6 +3,13 @@
 import Link from "next/link"
 import { useState } from "react"
 
+const LinkedInIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <rect width="24" height="24" rx="3" fill="#0A66C2"/>
+    <path d="M7.75 9.5H5.25V18H7.75V9.5ZM6.5 8.5A1.5 1.5 0 1 0 6.5 5.5 1.5 1.5 0 0 0 6.5 8.5ZM18.75 18H16.25V13.75C16.25 12.5 15.75 11.75 14.75 11.75C13.75 11.75 13.25 12.5 13.25 13.75V18H10.75V9.5H13.25V10.75C13.75 9.75 14.75 9.25 16 9.25C17.75 9.25 18.75 10.5 18.75 12.75V18Z" fill="white"/>
+  </svg>
+)
+
 export function Navigation() {
   const [open, setOpen] = useState(false)
 
@@ -23,17 +30,23 @@ export function Navigation() {
         <li><Link href="#technology">Technology</Link></li>
         <li><Link href="#familyoffice">Family Office</Link></li>
       </ul>
-      <Link href="#cta" className="nav-cta">Join Waitlist</Link>
+      <div className="nav-actions">
+        <a href="https://www.linkedin.com/company/slektcapital/" target="_blank" rel="noopener noreferrer" className="nav-linkedin" aria-label="Follow us on LinkedIn">
+          <LinkedInIcon />
+        </a>
+        <Link href="#cta" className="nav-cta">Join Waitlist</Link>
+      </div>
       <button className="nav-hamburger" onClick={() => setOpen(!open)} aria-label="Toggle menu">
-        <span className={open ? "ham-line open" : "ham-line"}></span>
-        <span className={open ? "ham-line open" : "ham-line"}></span>
-        <span className={open ? "ham-line open" : "ham-line"}></span>
+        <span className="ham-line"></span>
+        <span className="ham-line"></span>
+        <span className="ham-line"></span>
       </button>
       {open && (
         <div className="nav-mobile-menu">
           <Link href="#products" onClick={() => setOpen(false)}>Products</Link>
           <Link href="#technology" onClick={() => setOpen(false)}>Technology</Link>
           <Link href="#familyoffice" onClick={() => setOpen(false)}>Family Office</Link>
+          <a href="https://www.linkedin.com/company/slektcapital/" target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>Follow us on LinkedIn</a>
           <Link href="#cta" className="nav-mobile-cta" onClick={() => setOpen(false)}>Join Waitlist</Link>
         </div>
       )}

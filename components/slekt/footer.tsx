@@ -12,10 +12,12 @@ export function Footer() {
         </svg>
       </a>
       <div className="footer-social">
-        <a href="https://www.linkedin.com/company/slektcapital/" target="_blank" rel="noopener noreferrer" className="footer-social-link" aria-label="Slekt Capital on LinkedIn">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+        <a href="https://www.linkedin.com/company/slektcapital/" target="_blank" rel="noopener noreferrer" className="footer-linkedin">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <rect width="24" height="24" rx="3" fill="#0A66C2"/>
+            <path d="M7.75 9.5H5.25V18H7.75V9.5ZM6.5 8.5A1.5 1.5 0 1 0 6.5 5.5 1.5 1.5 0 0 0 6.5 8.5ZM18.75 18H16.25V13.75C16.25 12.5 15.75 11.75 14.75 11.75C13.75 11.75 13.25 12.5 13.25 13.75V18H10.75V9.5H13.25V10.75C13.75 9.75 14.75 9.25 16 9.25C17.75 9.25 18.75 10.5 18.75 12.75V18Z" fill="white"/>
           </svg>
+          Follow us on LinkedIn
         </a>
       </div>
       <span className="footer-copy">© 2026 Slekt Capital. Finnish EMI Licence in progress. From the founder of Narvi Payments.</span>
