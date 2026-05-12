@@ -1,0 +1,688 @@
+/* Virtual Family Office page — scoped CSS module */
+
+/* NAV overrides */
+.vfoNav {
+  padding: 1.25rem 3rem !important;
+  height: auto !important;
+}
+
+.navLogo {
+  font-family: 'DM Sans', var(--font-body), sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.navLogo span { color: var(--gold); }
+
+.navLinks {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.navLinks a {
+  font-size: 0.82rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  color: var(--mist);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.navLinks a:hover { color: var(--white); }
+
+.navBadge {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--midnight);
+  background: var(--gold);
+  padding: 0.4rem 1rem;
+  border-radius: 2px;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding: 8rem 3rem 5rem;
+  overflow: hidden;
+}
+
+.heroGridBg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(168,192,224,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(168,192,224,0.04) 1px, transparent 1px);
+  background-size: 80px 80px;
+  pointer-events: none;
+}
+
+.heroGlow {
+  position: absolute;
+  top: -10%;
+  right: -5%;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(ellipse, rgba(26,79,160,0.35) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.heroGlowGold {
+  position: absolute;
+  bottom: 5%;
+  left: -10%;
+  width: 500px;
+  height: 400px;
+  background: radial-gradient(ellipse, rgba(240,192,64,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.heroEyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 2rem;
+  position: relative;
+  animation: vfofadein 0.8s ease 0.1s both;
+}
+
+.heroEyebrow::before {
+  content: '';
+  width: 28px;
+  height: 1px;
+  background: var(--gold);
+  display: inline-block;
+}
+
+.heroHeadline {
+  font-family: 'Cormorant Garamond', var(--font-cormorant, Georgia), serif;
+  font-weight: 300;
+  font-size: clamp(3.2rem, 7vw, 6.5rem);
+  line-height: 1.0;
+  letter-spacing: -0.01em;
+  max-width: 820px;
+  position: relative;
+  margin-bottom: 1rem;
+  animation: vfofadein 0.9s ease 0.25s both;
+}
+
+.heroHeadline em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.heroSub {
+  font-family: 'Cormorant Garamond', var(--font-cormorant, Georgia), serif;
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  font-weight: 300;
+  color: var(--mist);
+  max-width: 620px;
+  line-height: 1.5;
+  margin-bottom: 3.5rem;
+  position: relative;
+  animation: vfofadein 0.9s ease 0.4s both;
+}
+
+.heroDivider {
+  width: 48px;
+  height: 1px;
+  background: var(--gold);
+  margin-bottom: 2rem;
+  opacity: 0.6;
+  animation: vfofadein 0.9s ease 0.5s both;
+}
+
+.heroStats {
+  display: flex;
+  gap: 4rem;
+  position: relative;
+  margin-top: 1rem;
+  animation: vfofadein 0.9s ease 0.55s both;
+}
+
+.heroStatValue {
+  font-family: 'Cormorant Garamond', var(--font-cormorant, Georgia), serif;
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: var(--white);
+  line-height: 1;
+}
+
+.heroStatValue span { color: var(--gold); }
+
+.heroStatLabel {
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mist);
+  margin-top: 0.4rem;
+  max-width: 120px;
+  line-height: 1.4;
+}
+
+.heroScrollHint {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(168,192,224,0.4);
+}
+
+.scrollLine {
+  width: 1px;
+  height: 48px;
+  background: linear-gradient(to bottom, rgba(168,192,224,0.4), transparent);
+  animation: scrollpulse 2.2s ease-in-out infinite;
+}
+
+@keyframes scrollpulse {
+  0%, 100% { opacity: 0.3; transform: scaleY(1); }
+  50% { opacity: 0.8; transform: scaleY(0.6); }
+}
+
+@keyframes vfofadein {
+  from { opacity: 0; transform: translateY(28px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* STATEMENT */
+.statement {
+  padding: 6rem 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 5rem;
+  align-items: center;
+  border-top: 1px solid rgba(168,192,224,0.1);
+}
+
+.statementLabel {
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 500;
+}
+
+.statementText {
+  font-family: 'Cormorant Garamond', var(--font-cormorant, Georgia), serif;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 300;
+  line-height: 1.45;
+  color: var(--white);
+}
+
+.statementText strong {
+  font-weight: 500;
+  color: var(--gold);
+}
+
+/* VFO SECTION */
+.vfoSection {
+  padding: 6rem 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.sectionNumber {
+  font-family: 'Cormorant Garamond', var(--font-cormorant, Georgia), serif;
+  font-size: 5rem;
+  font-weight: 300;
+  color: rgba(168,192,224,0.12);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.sectionTitle {
+  font-family: 'Cormorant Garamond', var(--font-cormorant, Georgia), serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--white);
+}
+
+.sectionTitle em { font-style: italic; color: var(--gold); }
+
+.compareGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  background: rgba(168,192,224,0.08);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.compareCol {
+  padding: 2.5rem;
+  background: var(--midnight);
+}
+
+.compareColHighlight {
+  padding: 2.5rem;
+  background: var(--deep);
+}
+
+.compareColLabel {
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--mist);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.compareColHighlight .compareColLabel {
+  color: var(--gold);
+}
+
+.compareItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: rgba(232,244,255,0.7);
+}
+
+.compareItem::before {
+  content: '—';
+  color: rgba(168,192,224,0.3);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.compareItemHighlight {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--frost);
+}
+
+.compareItemHighlight::before {
+  content: '✦';
+  color: var(--gold);
+  font-size: 0.6rem;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+/* PILLARS */
+.pillarsSection {
+  padding: 6rem 3rem;
+  background: var(--deep);
+}
+
+.pillarsInner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.pillarsHeader {
+  margin-bottom: 4rem;
+}
+
+.pillarsEyebrow {
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.pillarsTitle {
+  font-family: 'Cormorant Garamond', var(--font-cormorant, Georgia), serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--white);
+}
+
+.pillarsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5px;
+  background: rgba(168,192,224,0.07);
+}
+
+.pillar {
+  background: var(--deep);
+  padding: 2.5rem 2rem;
+  position: relative;
+}
+
+.pillarNumber {
+  font-family: 'Cormorant Garamond', var(--font-cormorant, Georgia), serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  color: var(--gold);
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.pillarName {
+  font-family: 'Cormorant Garamond', var(--font-cormorant, Georgia), serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+}
+
+.pillarSubtitle {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mist);
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.pillarDesc {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: rgba(168,192,224,0.7);
+  margin-bottom: 2rem;
+}
+
+.pillarFeatures {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.pillarFeatures li {
+  font-size: 0.82rem;
+  color: var(--frost);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  line-height: 1.4;
+}
+
+.pillarFeatures li::before {
+  content: '✦';
+  color: var(--gold);
+  font-size: 0.5rem;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.pillarYield {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-family: 'Cormorant Garamond', var(--font-cormorant, Georgia), serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--gold);
+}
+
+/* FOR SECTION */
+.forSection {
+  padding: 6rem 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.forGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5px;
+  background: rgba(168,192,224,0.08);
+  margin-top: 3.5rem;
+}
+
+.forCard {
+  background: var(--midnight);
+  padding: 2.5rem 2rem;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.forCard:hover { border-bottom-color: var(--gold); }
+
+.forType {
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.forName {
+  font-family: 'Cormorant Garamond', var(--font-cormorant, Georgia), serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.forDesc {
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: rgba(168,192,224,0.65);
+  margin-bottom: 2rem;
+}
+
+.forRange {
+  font-family: 'Cormorant Garamond', var(--font-cormorant, Georgia), serif;
+  font-size: 1.2rem;
+  color: var(--mist);
+  font-weight: 300;
+}
+
+.forRange strong {
+  color: var(--gold);
+  font-weight: 500;
+}
+
+/* GET SECTION */
+.getSection {
+  padding: 6rem 3rem;
+  background: var(--navy);
+}
+
+.getInner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.getGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5px;
+  background: rgba(168,192,224,0.08);
+  margin-top: 3.5rem;
+}
+
+.getItem {
+  background: var(--navy);
+  padding: 2.5rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.getIcon {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(240,192,64,0.25);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1rem;
+  color: var(--gold);
+}
+
+.getContentTitle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.getContentDesc {
+  font-size: 0.86rem;
+  line-height: 1.65;
+  color: rgba(168,192,224,0.6);
+}
+
+/* MANIFESTO */
+.manifesto {
+  padding: 8rem 3rem;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.manifestoQuote {
+  font-family: 'Cormorant Garamond', var(--font-cormorant, Georgia), serif;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.45;
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+
+.manifestoQuote em {
+  color: var(--gold);
+  font-style: normal;
+}
+
+.manifestoAttr {
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--mist);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.manifestoAttr::before,
+.manifestoAttr::after {
+  content: '';
+  width: 40px;
+  height: 1px;
+  background: rgba(168,192,224,0.2);
+}
+
+/* LICENCE BANNER */
+.licenseBanner {
+  background: rgba(26,79,160,0.15);
+  border-top: 1px solid rgba(168,192,224,0.1);
+  border-bottom: 1px solid rgba(168,192,224,0.1);
+  padding: 2rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.licenseItem {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--mist);
+  font-weight: 400;
+}
+
+.licenseDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+  flex-shrink: 0;
+}
+
+/* FOOTER override */
+.vfoFooter {
+  padding: 3rem !important;
+  border-top: 1px solid rgba(168,192,224,0.08) !important;
+  border-bottom: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-wrap: wrap !important;
+  gap: 1rem !important;
+}
+
+.footerLogo {
+  font-family: 'DM Sans', var(--font-body), sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mist);
+}
+
+.footerLogo span { color: var(--gold); }
+
+.footerRight {
+  font-size: 0.75rem;
+  color: rgba(168,192,224,0.35);
+  letter-spacing: 0.04em;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .vfoNav { padding: 1rem 1.5rem !important; }
+  .navLinks { display: none; }
+  .hero { padding: 7rem 1.5rem 4rem; }
+  .heroStats { gap: 2rem; flex-wrap: wrap; }
+  .statement { grid-template-columns: 1fr; gap: 1.5rem; padding: 4rem 1.5rem; }
+  .vfoSection, .forSection { padding: 4rem 1.5rem; }
+  .compareGrid, .pillarsGrid, .forGrid, .getGrid { grid-template-columns: 1fr; }
+  .pillarsSection, .getSection { padding: 4rem 1.5rem; }
+  .manifesto { padding: 5rem 1.5rem; }
+  .licenseBanner { gap: 2rem; padding: 2rem 1.5rem; }
+  .vfoFooter { padding: 2rem 1.5rem !important; }
+}
