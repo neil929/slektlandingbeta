@@ -61,7 +61,7 @@ export default function VirtualFamilyOfficePage() {
       <div className={styles.statement}>
         <div className={styles.statementLabel}>The Gap</div>
         <p className={styles.statementText}>
-          Modern entrepreneurs — digital founders, crypto-native investors, high-risk business owners — have built <strong>real wealth</strong> with no institutional infrastructure around it. Traditional family offices cost €500k per year and serve dynasties, not founders. <strong>Slekt changes that.</strong>
+          Modern entrepreneurs — digital founders, crypto-native investors — have built <strong>real wealth</strong> with no institutional infrastructure around it. Traditional family offices cost €500k per year and serve dynasties, not founders. <strong>Slekt changes that.</strong>
         </p>
       </div>
 
@@ -80,7 +80,6 @@ export default function VirtualFamilyOfficePage() {
             <div className={styles.compareItem}>Opaque, layered fee structures</div>
             <div className={styles.compareItem}>Complex onboarding, months of delay</div>
             <div className={styles.compareItem}>No digital interface — relationship-only</div>
-            <div className={styles.compareItem}>Inaccessible to high-risk businesses</div>
             <div className={styles.compareItem}>Ignores crypto &amp; digital assets</div>
           </div>
           <div className={styles.compareColHighlight}>
@@ -90,7 +89,6 @@ export default function VirtualFamilyOfficePage() {
             <div className={styles.compareItemHighlight}>Full transparency, real-time dashboard</div>
             <div className={styles.compareItemHighlight}>Digital onboarding in days, not months</div>
             <div className={styles.compareItemHighlight}>Modern platform — always accessible</div>
-            <div className={styles.compareItemHighlight}>Serves crypto, iGaming, high-risk clients</div>
             <div className={styles.compareItemHighlight}>Crypto-native from the ground up</div>
           </div>
         </div>
@@ -115,7 +113,6 @@ export default function VirtualFamilyOfficePage() {
                 <li>SEPA Instant, Faster Payments, SWIFT</li>
                 <li>USDT, USDC &amp; BTC on/off ramp</li>
                 <li>FX at institutional rates (0.5–2%)</li>
-                <li>High-risk &amp; crypto businesses welcome</li>
               </ul>
             </div>
 
@@ -164,13 +161,6 @@ export default function VirtualFamilyOfficePage() {
             <div className={styles.forName}>The Digital<br />Founder</div>
             <p className={styles.forDesc}>Built a SaaS, sold a company, or grown a profitable business. Significant wealth, but no time or infrastructure to manage it properly.</p>
             <div className={styles.forRange}>Assets: <strong>€1M – €20M</strong></div>
-          </div>
-
-          <div className={styles.forCard}>
-            <div className={styles.forType}>High-Risk Business</div>
-            <div className={styles.forName}>iGaming &amp;<br />Crypto Operator</div>
-            <p className={styles.forDesc}>Significant cash held in EMI accounts earning zero. Blocked from conventional investment services. Slekt serves where banks won&apos;t.</p>
-            <div className={styles.forRange}>Cash holdings: <strong>€2M – €50M</strong></div>
           </div>
 
           <div className={styles.forCard}>
