@@ -55,10 +55,6 @@ export default function VirtualFamilyOfficePage() {
           </div>
         </div>
 
-        <div className={styles.heroScrollHint}>
-          <div className={styles.scrollLine}></div>
-          Scroll
-        </div>
       </section>
 
       {/* STATEMENT */}
@@ -255,14 +251,6 @@ export default function VirtualFamilyOfficePage() {
         </blockquote>
         <div className={styles.manifestoAttr}>Slekt Capital — Helsinki, 2025</div>
       </section>
-
-      {/* LICENCE BANNER */}
-      <div className={styles.licenseBanner}>
-        <div className={styles.licenseItem}><div className={styles.licenseDot}></div>MiFID II Licensed — Finland</div>
-        <div className={styles.licenseItem}><div className={styles.licenseDot}></div>ADGM Category 3C — UAE</div>
-        <div className={styles.licenseItem}><div className={styles.licenseDot}></div>Swiss AMC Registered</div>
-        <div className={styles.licenseItem}><div className={styles.licenseDot}></div>AIFC Licensed — Kazakhstan</div>
-      </div>
 
       {/* FOOTER */}
       <footer className={styles.vfoFooter}>
