@@ -464,7 +464,7 @@
 
 .forGrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5px;
   background: rgba(168,192,224,0.08);
   margin-top: 3.5rem;
