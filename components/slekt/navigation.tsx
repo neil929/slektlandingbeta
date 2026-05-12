@@ -28,7 +28,7 @@ export function Navigation() {
       <ul className="nav-links">
         <li><Link href="#products">Products</Link></li>
         <li><Link href="#technology">Technology</Link></li>
-        <li><Link href="/virtualfamilyoffice">Family Office</Link></li>
+        <li><Link href="/virtualfamilyoffice">Family Office OS</Link></li>
       </ul>
       <div className="nav-actions">
         <a href="https://www.linkedin.com/company/slektcapital/" target="_blank" rel="noopener noreferrer" className="nav-linkedin" aria-label="Follow us on LinkedIn">
@@ -45,7 +45,7 @@ export function Navigation() {
         <div className="nav-mobile-menu">
           <Link href="#products" onClick={() => setOpen(false)}>Products</Link>
           <Link href="#technology" onClick={() => setOpen(false)}>Technology</Link>
-          <Link href="/virtualfamilyoffice" onClick={() => setOpen(false)}>Family Office</Link>
+          <Link href="/virtualfamilyoffice" onClick={() => setOpen(false)}>Family Office OS</Link>
           <a href="https://www.linkedin.com/company/slektcapital/" target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>Follow us on LinkedIn</a>
           <Link href="#cta" className="nav-mobile-cta" onClick={() => setOpen(false)}>Join Waitlist</Link>
         </div>
