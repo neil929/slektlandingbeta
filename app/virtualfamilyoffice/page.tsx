@@ -3,7 +3,7 @@ import styles from './vfo.module.css'
 
 export const metadata: Metadata = {
   title: 'Virtual Family Office — Slekt Capital',
-  description: 'Institutional-grade wealth management built for the founder generation. From €1M in assets — banking, investments, and fund structures in one platform.',
+  description: 'Institutional-grade wealth management built for the founder generation. Banking, investments, and fund structures — all in one platform.',
 }
 
 export default function VirtualFamilyOfficePage() {
@@ -46,12 +46,12 @@ export default function VirtualFamilyOfficePage() {
             <div className={styles.heroStatLabel}>Generational wealth transfer underway</div>
           </div>
           <div>
-            <div className={styles.heroStatValue}><span>2–10</span>%</div>
+            <div className={styles.heroStatValue}><span>2–8</span>%</div>
             <div className={styles.heroStatLabel}>Target annual returns on managed assets</div>
           </div>
           <div>
-            <div className={styles.heroStatValue}>€<span>1</span>M+</div>
-            <div className={styles.heroStatLabel}>Minimum assets under management</div>
+            <div className={styles.heroStatValue}><span>0.25</span>%</div>
+            <div className={styles.heroStatLabel}>Annual fee — no minimum balance</div>
           </div>
         </div>
 
@@ -75,7 +75,7 @@ export default function VirtualFamilyOfficePage() {
         <div className={styles.compareGrid}>
           <div className={styles.compareCol}>
             <div className={styles.compareColLabel}>Traditional Family Office</div>
-            <div className={styles.compareItem}>Reserved for €50M+ dynasties</div>
+            <div className={styles.compareItem}>Reserved for €25M+ dynasties</div>
             <div className={styles.compareItem}>€200k–€500k annual advisory fees</div>
             <div className={styles.compareItem}>Opaque, layered fee structures</div>
             <div className={styles.compareItem}>Complex onboarding, months of delay</div>
@@ -84,7 +84,7 @@ export default function VirtualFamilyOfficePage() {
           </div>
           <div className={styles.compareColHighlight}>
             <div className={styles.compareColLabel}>Slekt Virtual Family Office</div>
-            <div className={styles.compareItemHighlight}>From €1M in assets — built for founders</div>
+            <div className={styles.compareItemHighlight}>Built for founders — no minimum balance</div>
             <div className={styles.compareItemHighlight}>0.25–1% annual fee on AUM, nothing more</div>
             <div className={styles.compareItemHighlight}>Full transparency, real-time dashboard</div>
             <div className={styles.compareItemHighlight}>Digital onboarding in days, not months</div>
@@ -118,7 +118,7 @@ export default function VirtualFamilyOfficePage() {
 
             <div className={styles.pillar}>
               <div className={styles.pillarNumber}>02 / The Portfolio</div>
-              <div className={styles.pillarYield}>2–10%</div>
+              <div className={styles.pillarYield}>2–8%</div>
               <div className={styles.pillarName}>Investment<br />Management</div>
               <div className={styles.pillarSubtitle}>Curated Returns, No Complexity</div>
               <p className={styles.pillarDesc}>Five to ten rigorously curated products — from safe European government bonds to higher-yield alternatives. Selected by investment committee, not algorithm.</p>
@@ -139,8 +139,8 @@ export default function VirtualFamilyOfficePage() {
               <ul className={styles.pillarFeatures}>
                 <li>Special Purpose Vehicles (SPVs)</li>
                 <li>Alternative Investment Funds (AIFs)</li>
-                <li>Swiss AMC — own ISIN, 7–10% target</li>
-                <li>AIFC fund structures (Kazakhstan)</li>
+                <li>Tokenised fund structures — own ISIN</li>
+                <li>EU-domiciled fund structures</li>
                 <li>Multi-jurisdictional holding companies</li>
               </ul>
             </div>
@@ -200,8 +200,8 @@ export default function VirtualFamilyOfficePage() {
             <div className={styles.getItem}>
               <div className={styles.getIcon}>◆</div>
               <div>
-                <div className={styles.getContentTitle}>Multi-jurisdictional by design.</div>
-                <p className={styles.getContentDesc}>Finland, UAE, Switzerland, and Kazakhstan. Flexible onboarding regardless of where your business is registered or where you reside.</p>
+                <div className={styles.getContentTitle}>Built in Europe. For Europe.</div>
+                <p className={styles.getContentDesc}>Headquartered in Helsinki, operating across the EU. Full EU data residency, passportable across member states — built on the same regulatory framework that protects your deposits at any European bank.</p>
               </div>
             </div>
 
@@ -231,7 +231,7 @@ export default function VirtualFamilyOfficePage() {
           It deserves to <em>grow across generations</em> —<br />
           not sit idle on a business account.&rdquo;
         </blockquote>
-        <div className={styles.manifestoAttr}>Slekt Capital — Helsinki, 2025</div>
+        <div className={styles.manifestoAttr}>Slekt Capital — Helsinki, 2026</div>
       </section>
 
       {/* FOOTER */}
