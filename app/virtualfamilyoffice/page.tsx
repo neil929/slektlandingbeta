@@ -190,14 +190,6 @@ export default function VirtualFamilyOfficePage() {
             </div>
 
             <div className={styles.getItem}>
-              <div className={styles.getIcon}>◉</div>
-              <div>
-                <div className={styles.getContentTitle}>MiFID II regulated. Finland-licensed.</div>
-                <p className={styles.getContentDesc}>Operating under EU financial regulation with full MiFID II and Payment Institution licensing. Institutional protections, modern delivery.</p>
-              </div>
-            </div>
-
-            <div className={styles.getItem}>
               <div className={styles.getIcon}>◇</div>
               <div>
                 <div className={styles.getContentTitle}>Transparent fees. Nothing hidden.</div>
@@ -209,7 +201,7 @@ export default function VirtualFamilyOfficePage() {
               <div className={styles.getIcon}>◆</div>
               <div>
                 <div className={styles.getContentTitle}>Multi-jurisdictional by design.</div>
-                <p className={styles.getContentDesc}>Finland, UAE (ADGM), Switzerland, and AIFC Kazakhstan. Flexible onboarding regardless of where your business is registered or where you reside.</p>
+                <p className={styles.getContentDesc}>Finland, UAE, Switzerland, and Kazakhstan. Flexible onboarding regardless of where your business is registered or where you reside.</p>
               </div>
             </div>
 
