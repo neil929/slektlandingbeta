@@ -32,17 +32,8 @@ const cormorantGaramond = Cormorant_Garamond({
 export const metadata: Metadata = {
   title: 'Slekt Capital — Banking 3.0',
   description: 'AI-native banking platform. Earn on idle cash, bank globally, and manage everything with AI at a fraction of the current cost.',
-  generator: 'v0.app',
   icons: {
     icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
       {
         url: '/icon.svg',
         type: 'image/svg+xml',
